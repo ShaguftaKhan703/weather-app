@@ -1,0 +1,97 @@
+<!-- <!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Weather App</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css" integrity="sha512-5Hs3dF2AEPkpNAR7UiOHba+lRSJNeM2ECkwxUIxC1Q/FLycGTbNapWXB4tP889k5T5Ju8fs4b1P5z/iB4nMfSQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <script src="https://cdn.tailwindcss.com"></script>
+  </head>
+  <body class="bg-slate-400">
+    
+    <div
+      class="name h-screen flex z-0 relative justify-center items-center space-x-4 mt-6 bg-no-repeat bg-cover"
+      style="background-image: url('weatherimg.jpg')"
+    >
+  
+    <i class="fa-solid fa-magnifying-glass fa-xl absolute left-[460px]"></i>
+      <input
+        type="text"
+        class="inputValue px-16 py-3 rounded-xl bg-gray-300 focus:ring-4 ring-blue-800 ring-offset-2"
+        placeholder="Enter Location"
+      />
+      <button
+        type="button"
+        class="button py-3 px-4 rounded-lg text-gray-400 bg-blue-900"
+      >
+        Search
+      </button>
+    </div>
+  
+      <div
+        class="displayWeather absolute bottom-[200px] left-[580px] flex flex-col items-center  "
+      >
+        <h1 class="temp"></h1>
+        <p class="desc"></p>
+      </div>
+    </div>
+    <script src="./weather.js"></script>
+  </body>
+</html> -->
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Weather App</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css"
+      integrity="sha512-5Hs3dF2AEPkpNAR7UiOHba+lRSJNeM2ECkwxUIxC1Q/FLycGTbNapWXB4tP889k5T5Ju8fs4b1P5z/iB4nMfSQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <script src="https://cdn.tailwindcss.com"></script>
+  </head>
+  <body
+    class="bg-gradient-to-r from-blue-400 via-blue-300 to-blue-500 font-sans"
+  >
+    <div class="h-screen flex flex-col justify-center items-center relative">
+      <div class="w-full max-w-md text-center mb-10">
+        <h1 class="text-4xl font-bold text-white mb-2">Weather App</h1>
+        <p class="text-lg text-blue-100">
+          Find the current weather of any city!
+        </p>
+      </div>
+      <div
+        class="flex items-center bg-white rounded-full shadow-lg overflow-hidden w-full max-w-lg p-1"
+      >
+        <i class="fa-solid fa-magnifying-glass fa-lg text-gray-400 mx-3"></i>
+        <input
+          type="text"
+          class="inputValue flex-1 px-4 py-2 text-gray-800 text-lg focus:outline-none"
+          placeholder="Enter Location"
+        />
+        <button
+          type="button"
+          class="button bg-blue-500 text-white py-2 px-6 rounded-full hover:bg-blue-600 transition duration-300"
+        >
+          Search
+        </button>
+      </div>
+      <div
+        class="displayWeather mt-10 bg-white bg-opacity-90 rounded-xl shadow-2xl p-8 text-center w-full max-w-md"
+      >
+        <h2 class="city text-3xl font-semibold text-gray-800 mb-4">
+          City Name
+        </h2>
+        <h1 class="temp text-5xl font-bold text-blue-700 mb-4">--</h1>
+        <p class="desc text-xl text-gray-700">
+          Weather details will appear here
+        </p>
+      </div>
+    </div>
+    <script src="weather.js"></script>
+  </body>
+</html>
